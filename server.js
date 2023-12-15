@@ -1,7 +1,7 @@
 const express = require('express');
 const path = require('path');
 const app = express();
-const port = 5502;
+const port = process.env.PORT || 5200;
 const http = require('http');
 const session = require("express-session");
 const cookieParser = require("cookie-parser");
@@ -15,11 +15,11 @@ app.set("view engine", "ejs");
 app.use(express.json())
 app.use(
     session({
-      resave: true,
-      saveUninitialized: false,
-      secret: "Secret", // use .env for secret string
+        resave: true,
+        saveUninitialized: false,
+        secret: "Secret", // use .env for secret string
     })
-  );
+);
 
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'templates/index.html'));
@@ -59,7 +59,7 @@ app.get('/user', (req, res) => {
 
 // app.get("/user/getPreferences", (req, res) => {
 //     user1 = req.session.user
-  
+
 // })
 
 app.listen(port, () => {
