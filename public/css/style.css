@@ -1,0 +1,139 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    background-color: #222d35;
+    text-align: center;
+    /* padding-top: 20%; */
+}
+
+h1,
+.appName {
+    font-size: 3em;
+    color: #ff8c00;
+    /* Bright orange */
+    margin-bottom: 0.5em;
+}
+
+p {
+    font-size: 2em;
+    margin: 0;
+    color: #bbb;
+    /* Lighter grey for readability */
+}
+
+.start-button {
+    margin-top: .5em;
+    font-size: 2em;
+    padding: 10px 20px;
+    background-color: #ff8c00;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.start-button:hover {
+    background-color: #e67e22;
+    transform: scale(1.1);
+}
+
+.fa-treble-clef {
+    color: #ff8c00;
+    font-size: 4em;
+    margin-bottom: 0.5em;
+}
+
+.test {
+    font-size: 10em;
+}
+
+.hidden {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* display: none; */
+}
+
+#options button,
+.signInButton,
+.signUpButton, #backToTop {
+    font-size: 1.5em;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #ff8c00;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#options button:hover,
+.signInButton:hover,
+.signUpButton:hover, #backToTop:hover {
+    background-color: #e67e22;
+}
+
+.login {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.sublogin {
+    width: 50%;
+
+    background-color: #f4f4f4;
+    border-radius: 1em;
+    padding: 1em;
+}
+
+#scroll1 {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+.user,
+.pass {
+    padding: 1em;
+}
+
+#mainContent {
+    transition: opacity 1s ease-out;
+    margin-top: 2em;
+    height: 40em;
+
+}
+
+.playlist-title {
+    cursor: pointer;
+
+}
+
+.song-title {
+    cursor: pointer;
+}
+
+#anchor-test1 {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 30em;
+}
+.about-us {
+    font-family: 'Preahvihear', sans-serif;
+    color: #bbb;
+    margin-top: .5em;
+    font-size: 1.5em;
+    width: 25em;
+}
+.music-gif{
+    display: flex;
+    justify-content: center;
+}

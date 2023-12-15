@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>HarmonyScout</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="/public/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Preahvihear&display=swap" rel="stylesheet">
+  <script src="/public/js/script.js" defer></script>
+
+</head>
+
+<body>
+  <div id="mainContent">
+    <i class="fas fa-music fa-treble-clef"></i>
+    <h1 class="appName">HarmonyScout</h1>
+    <p>Discover Music That Resonates</p>
+    <div class="music-gif">
+      <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+        type="module"></script>
+
+      <dotlottie-player src="https://lottie.host/9b7961aa-121b-4bfc-9285-652cd8ba8ced/45ED3dlvas.json"
+        background="transparent" speed="1" style="width: 200px; height: 200px;" loop autoplay></dotlottie-player>
+    </div>
+    <button class="start-button">
+      <a id="scroll1" href="#options">Start Discovering</a>
+    </button>
+   
+  </div>
+
+  <div id="anchor-test1">
+    <div class="about-us">
+      <strong>Discover New Sounds</strong><br>
+      Harmony Scout is your go-to destination for discovering emerging artists,
+      timeless classics, and hidden gems across genres.
+      From soulful melodies to heart-pounding beats,
+      our platform is designed to cater to every musical taste.
+    </div>
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+
+    <dotlottie-player src="https://lottie.host/6a7430eb-48e2-402b-9032-ef3264741bfb/Gko91jiqtn.json"
+      background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
+
+  </div>
+
+
+  <div id="options" class="hidden">
+    <button id="spotifyLogin" onclick="loginWithSpotify()">
+      Login with Spotify
+    </button>
+    <button id="signIn" onclick="signIn()">
+      Sign In
+    </button>
+    <button id="signUp" onclick="signUp()">
+      Sign Up
+    </button>
+    <button id="backToTop">
+      <a id="scroll1" href="#mainContent">Back To Top</a>
+    </button>
+  </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    height: 100vh;
+    background-color: #222d35;
+}
+
+.signUpTitle,
+.signInTitle {
+    text-align: center;
+    font-size: 3em;
+}
+
+.errorDisplay {
+    color: red;
+    font-size: 1.2em;
+}
+
+
+.signUp,
+.signIn {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.subSignUp,
+.subSignIn {
+    width: 50%;
+}
+
+form {
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    flex-direction: column;
+}
+
+.user,
+.pass,
+.reenterPass,
+.userEmail {
+    font-family: 'Roboto', sans-serif;
+    padding: 0.5em 2em 0.5em 0.5em;
+    font-size: 1.2em;
+    border-radius: 0.5em;
+    border: none;
+}
+
+.signUpButton,
+.resetButton,
+.signInButton,
+.redirectToSignUpButton,
+.redirectSignInButton {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    padding: 0.5em 2em 0.5em 0.5em;
+    margin-top: 1em;
+    background-color: rgb(84, 142, 209);
+    color: #fff;
+    border: none;
+    border-radius: 0.5em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.signUpButton:hover,
+.resetButton:hover,
+.signInButton:hover,
+.redirectSignInButton:hover,
+.redirectToSignUpButton:hover {
+    opacity: .5;
+}
+
+.error {
+    color: red;
+}
+
+.appName {
+    font-size: 3em;
+    color: #ff8c00;
+    /* Bright orange */
+    margin-left: 0.5em;
+}
